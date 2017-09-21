@@ -1,5 +1,7 @@
 # SmartRockets-GeneticAlgorithm
 
+![image smart rockets](http://divers.corentin-thomasset.fr/public/images/smart-rockets-screenshot.png "Smart rockets")
+
 Try it: [live demo](http://divers.corentin-thomasset.fr/smart-rockets/).
 
 ## Description
