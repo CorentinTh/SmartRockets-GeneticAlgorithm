@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Evolutive rockets</title>
+    <script src="js/p5.min.js" charset="utf-8"></script>
+    <script src="js/p5.dom.js" charset="utf-8"></script>
+    <script src="js/obstacle.js" charset="utf-8"></script>
+    <script src="js/dna.js" charset="utf-8"></script>
+    <script src="js/rocket.js" charset="utf-8"></script>
+    <script src="js/generation.js" charset="utf-8"></script>
+    <script src="js/sketch.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <h1>Genetic algorithm</h1>
+    <p class="subtitle">By <a href="http://corentin-thomasset.fr">Corentin Th.</a></p>
+    <div id="canvas-container"></div>
+
+    <div class="container">
+        <div class="input-container" id="slider1">
+            <label for="reducer">Generation skipper: </label>
+        </div>
+    </div>
+
+    <div class="explanation">
+        <p>
+            A population of rectangle learn to reach a goal (the circle at the top) over time. A basic Genetic algorithm is used to make the population evoluate. The best performing rectangles have more chance to see their "genes" in the next generation.
+        </p>
+        <p>
+            If a rectangle reach the goal, it has 10 times more chance to be in the next generation. In the rectangles that have reached their goals, the quicker ones has also 10 times more chances to be in the newt generation. On the other hand, a rectangles that dies on an obstacle has 10 less chnace to be part of the next genration than one that dies due to timeout.
+        </p>
+
+        <p>
+            Rectangles have a chance of mutating, which causes them to acquire a new, completely random set of genes. That why they will always be some rectangles that deviate from the trajectoire. It permits to optimize the path to reach the goal.
+        </p>
+    </div>
+</body>
+
+</html>
