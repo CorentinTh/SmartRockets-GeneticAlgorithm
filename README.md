@@ -1,5 +1,7 @@
 # SmartRockets-GeneticAlgorithm
 
+Try it: [live demo](http://divers.corentin-thomasset.fr/smart-rockets/).
+
 ## Description
 A population of rectangle learn to reach a goal (the circle at the top) over time. A basic Genetic algorithm is used to make the population evoluate. The best performing rectangles have more chance to see their "genes" in the next generation.
 
